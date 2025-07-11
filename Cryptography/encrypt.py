@@ -84,4 +84,4 @@ def encrypt_file (input_file_path, output_directory, public_key_path, chunk_size
     return metadata
 pass
 
-encrypt_file("/home/arjun//Documents/Kludge/LP/crypto/test.pdf", "/home/arjun/Documents/Kludge/LP/crypto/output_directory", "/home/arjun/Documents/Kludge/LP/crypto/public_key.pem")
+encrypt_file("/home/arjun/Documents/Kludge_LP/Cryptography/early_transcendentals.pdf", "/home/arjun/Documents/Kludge_LP/Cryptography/output_directorie", "/home/arjun/Documents/Kludge_LP/Cryptography/public_key.pem")

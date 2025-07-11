@@ -56,9 +56,10 @@ def decrypt_file(encrypted_directory, output_file_path, private_key_path):
                     return False
 
                 f.write(plain_text)
-    print("File decrypted successfully")
+    #print("File decrypted successfully")
+
     return True
 
-decrypt_file("/home/arjun/Documents/Kludge/LP/crypto/output_directory", "/home/arjun/Documents/Kludge/LP/crypto/out.pdf", "/home/arjun/Documents/Kludge/LP/crypto/private_key.pem")
+decrypt_file("/home/arjun/Documents/Kludge_LP/Cryptography/output_directories", "/home/arjun/Documents/Kludge_LP/Cryptography/out.pdf", "/home/arjun/Documents/Kludge_LP/Cryptography/private_key.pem")
 
 
