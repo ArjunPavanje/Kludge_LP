@@ -1,0 +1,247 @@
+{
+  "file_info": {
+    "original_name": "early_transcendentals.pdf",
+    "original_size": 33786136,
+    "chunk_size": 1048576,
+    "total_chunks": 33,
+    " encryption_algorithm ": " AES -256 - GCM ",
+    " key_encryption ": " RSA -4096"
+  },
+  "chunks": [
+    {
+      "chunk_id": 1,
+      "encrypted_filename": "chunk_1.enc",
+      "iv": "iHXm4i94PxfiiGsE",
+      "checksum": "a00f759eac1f68f96a49174597a89a926d6499e1aa4b27142cfce17c7d12cf5d",
+      "size": 1048576
+    },
+    {
+      "chunk_id": 2,
+      "encrypted_filename": "chunk_2.enc",
+      "iv": "WTivi3erfz818tkP",
+      "checksum": "3476ae9145f0da7c980930196df0ddaefc7bc22e75c3cbb434f644aba8b2d91b",
+      "size": 1048576
+    },
+    {
+      "chunk_id": 3,
+      "encrypted_filename": "chunk_3.enc",
+      "iv": "ibHPVlLIk/LiNXMZ",
+      "checksum": "f40a40004dfc1c0db195d617e1a8996cf6288570cdbb91b401b2b28f1275e0f4",
+      "size": 1048576
+    },
+    {
+      "chunk_id": 4,
+      "encrypted_filename": "chunk_4.enc",
+      "iv": "L1ChbHv7mq58zRq2",
+      "checksum": "0e42352834629aa5c6d1aa46f4c72a1487d1611961ad3afa910292a0981e8eb8",
+      "size": 1048576
+    },
+    {
+      "chunk_id": 5,
+      "encrypted_filename": "chunk_5.enc",
+      "iv": "9d13q5dsi6qYCvfw",
+      "checksum": "c447c2a1a9a2a6adfcc65cc134732a1f74a1d6dba65e936d48abb8a1b8c427a4",
+      "size": 1048576
+    },
+    {
+      "chunk_id": 6,
+      "encrypted_filename": "chunk_6.enc",
+      "iv": "uzlA/yhPArX9fiHJ",
+      "checksum": "c80d5a0dbf068cc1b188158c85930833b18aaccf94a7040c4fb7d430486c39c9",
+      "size": 1048576
+    },
+    {
+      "chunk_id": 7,
+      "encrypted_filename": "chunk_7.enc",
+      "iv": "wmm9SP3JB8RtuXDc",
+      "checksum": "498dd0b81cf39eb160d8429c8c217d3d85414f1a2e256ec154fe803e923d6653",
+      "size": 1048576
+    },
+    {
+      "chunk_id": 8,
+      "encrypted_filename": "chunk_8.enc",
+      "iv": "8sQlE99qdtENzs7j",
+      "checksum": "a65c43c92401dcc95e822bf2f58b93aea489b1d4b09d5f7584b58f8441a9c8ed",
+      "size": 1048576
+    },
+    {
+      "chunk_id": 9,
+      "encrypted_filename": "chunk_9.enc",
+      "iv": "YDdqRWSZiZkZrmHz",
+      "checksum": "8dcc9df6b5010dde5db486be1ef67cb9c78836b41f5c6803e3c86c032d50357b",
+      "size": 1048576
+    },
+    {
+      "chunk_id": 10,
+      "encrypted_filename": "chunk_10.enc",
+      "iv": "jHkvOwMm5hUm2Vq5",
+      "checksum": "e0cef5aa78bdf3da989f25333a7ad7f39c2421b5dee050c4bd604342729b5947",
+      "size": 1048576
+    },
+    {
+      "chunk_id": 11,
+      "encrypted_filename": "chunk_11.enc",
+      "iv": "+ML4iANQB5UI5DnG",
+      "checksum": "f5ba28f1d7b97a0ce6ea2425f24519e4f1698bebb6315d5fedcb9054b2b93e0a",
+      "size": 1048576
+    },
+    {
+      "chunk_id": 12,
+      "encrypted_filename": "chunk_12.enc",
+      "iv": "RkGtpTi5AD1t7Omr",
+      "checksum": "497d314337e0ed106fdc0cd82c3e1e014092d76d17c84fa9794716b92027fabc",
+      "size": 1048576
+    },
+    {
+      "chunk_id": 13,
+      "encrypted_filename": "chunk_13.enc",
+      "iv": "OC08T4NTfLLwMxfn",
+      "checksum": "a9706628f7486e9f81d2dfc62fb176a605d3a5f9e875808e391641a45c41de95",
+      "size": 1048576
+    },
+    {
+      "chunk_id": 14,
+      "encrypted_filename": "chunk_14.enc",
+      "iv": "eYInoA5hH43qHdhH",
+      "checksum": "d5ad84ecca269b6111298a2bc3dab651c532120c5bbc572c3bcad027e3892175",
+      "size": 1048576
+    },
+    {
+      "chunk_id": 15,
+      "encrypted_filename": "chunk_15.enc",
+      "iv": "3n2vb45LJWmkQYeC",
+      "checksum": "68bebea32f0d52b6cbded71319f77c8045b6c7c7b2e94ffa2d9c6cf99243f8cc",
+      "size": 1048576
+    },
+    {
+      "chunk_id": 16,
+      "encrypted_filename": "chunk_16.enc",
+      "iv": "acFjjrF/s17lHA7i",
+      "checksum": "c8675762cdc6b2fa710cfb57df27b468c8bcf080d96c5b4bf44eecad4d3916b7",
+      "size": 1048576
+    },
+    {
+      "chunk_id": 17,
+      "encrypted_filename": "chunk_17.enc",
+      "iv": "L+9kcejoBQtK2ydQ",
+      "checksum": "ca8b1a2412db619f61e97121a984c06c7e4622dfa42122f973c0e04d69670f8d",
+      "size": 1048576
+    },
+    {
+      "chunk_id": 18,
+      "encrypted_filename": "chunk_18.enc",
+      "iv": "PDcpgqHJJz8yOfEZ",
+      "checksum": "feff8c05633112e1b8e09258191eb37b000b938c2e8e9a5be9c69027ac0da3b5",
+      "size": 1048576
+    },
+    {
+      "chunk_id": 19,
+      "encrypted_filename": "chunk_19.enc",
+      "iv": "dxsfxCNhJg0L7gYy",
+      "checksum": "a125a93383ce923ce179df093f221cbc55e7b2dd2cee83589f4f15ef869d6ebb",
+      "size": 1048576
+    },
+    {
+      "chunk_id": 20,
+      "encrypted_filename": "chunk_20.enc",
+      "iv": "d58oEEBuX5HKL/ii",
+      "checksum": "f37f3dcbd58135722307756ec6025a0bc35b9518da7ab584805d5f422b6d1e41",
+      "size": 1048576
+    },
+    {
+      "chunk_id": 21,
+      "encrypted_filename": "chunk_21.enc",
+      "iv": "vcTTCH5C1EMrItcK",
+      "checksum": "013da417e72b12ff1ca6fca07ca8324fb52f425eb283ca143d3b148c421b08f8",
+      "size": 1048576
+    },
+    {
+      "chunk_id": 22,
+      "encrypted_filename": "chunk_22.enc",
+      "iv": "7X+EeXxR4B8Cvlpc",
+      "checksum": "2285219225c5130b7dc57256c9f1a3149479353dc89ec4ca66e90a0fe18f63e1",
+      "size": 1048576
+    },
+    {
+      "chunk_id": 23,
+      "encrypted_filename": "chunk_23.enc",
+      "iv": "PxQzTgMSTIpu1aNp",
+      "checksum": "715d7a6182305a1105adb5ac4f5f53bb076b54a54921a72daad1b129fae278d3",
+      "size": 1048576
+    },
+    {
+      "chunk_id": 24,
+      "encrypted_filename": "chunk_24.enc",
+      "iv": "evQFhwNh9TAI3X01",
+      "checksum": "cb5682ee4208e9b2c7879d3fadc20fa1727bfd5a0cbc88b410b9530ea8f113ca",
+      "size": 1048576
+    },
+    {
+      "chunk_id": 25,
+      "encrypted_filename": "chunk_25.enc",
+      "iv": "a0B+MI156Bpw3ksm",
+      "checksum": "dfef0515b758cf6616ab0bd2f200c81719f272024cb6d1901d3bdf5e21580fb8",
+      "size": 1048576
+    },
+    {
+      "chunk_id": 26,
+      "encrypted_filename": "chunk_26.enc",
+      "iv": "wKFVuBobzID/0hLk",
+      "checksum": "7e74e4f2a1b4170fce2c77a29e863605fb570667e50dd26f87e03ef530930d39",
+      "size": 1048576
+    },
+    {
+      "chunk_id": 27,
+      "encrypted_filename": "chunk_27.enc",
+      "iv": "nZ3B9yhlpr/ipQXg",
+      "checksum": "37c7c82652bcf6d5c606170b830936c22d1e35a381e5c9bf43477e6dd3a7f422",
+      "size": 1048576
+    },
+    {
+      "chunk_id": 28,
+      "encrypted_filename": "chunk_28.enc",
+      "iv": "G9avKpc7dathZTCK",
+      "checksum": "369d213ded3233025ca321a94036cefec26e29bad53ebb239e38fc92f5dac92f",
+      "size": 1048576
+    },
+    {
+      "chunk_id": 29,
+      "encrypted_filename": "chunk_29.enc",
+      "iv": "VEIy4IzRpyIuoFxB",
+      "checksum": "e3071f1f7d8ef9d228dbddbe6ead3848f6feebfc8342734332883cd695d6d332",
+      "size": 1048576
+    },
+    {
+      "chunk_id": 30,
+      "encrypted_filename": "chunk_30.enc",
+      "iv": "8DpY88YGR+B16dbE",
+      "checksum": "7bccc065ec01b430801317659143868be1e8c88472f58e66506d0223af0542d2",
+      "size": 1048576
+    },
+    {
+      "chunk_id": 31,
+      "encrypted_filename": "chunk_31.enc",
+      "iv": "w3ifc5qzzFYmzCwI",
+      "checksum": "b5158c8891a2c90d3fda61204041cf2eb324c039c02348954a1ccc02a15b7d4f",
+      "size": 1048576
+    },
+    {
+      "chunk_id": 32,
+      "encrypted_filename": "chunk_32.enc",
+      "iv": "FyJNMPBbZ4IwoqQb",
+      "checksum": "21da1bc1c73b2c7707ad7588fc8da012582548d2c01a59b32dc38a0f3c5e09a4",
+      "size": 1048576
+    },
+    {
+      "chunk_id": 33,
+      "encrypted_filename": "chunk_33.enc",
+      "iv": "fiVyQf4kVTww1aaN",
+      "checksum": "e5e35d2e7621917a57190875040e5fcaa325e491ea6af4098bc0d3cf0f374492",
+      "size": 231704
+    }
+  ],
+  "keys": {
+    "encrypted_master_key": "u8e++GEUZ7OsMHF3fTcTWS+9iM2UpVs46bH5RO4cOBkVLLli0Il8FyKEPaBtpQjM3T3QBUwFl5GhvOX/qIkbzD28jCC/5M5SJQEZsdreYfsjBozuQxBVByTtH4GmITThuEteMwOHQcKLeNshdITZHyQp4LKQwj0P2ayWuH4fn56lukZvMvG8XirdgZajJVtC7jI9lTb9ZjgzjxEOhx2/vE7atF1XA3Gv9va7YSezfbVZ5h+nHJiA84LGe0nrS8zoyAjA/l2qzeU74wxJrSQo55uoOJ6FEXbdRl4l3534zI18l/mIpW8iL6v4swHQQeqRzeilZlmLk5fGyRFv8W2OQ28FURX110+aFCXagf/QtaSc+Wgsr5V/IkN1Yh7nHnv38czbn6WcjBaQ57cdA7y2wWFBKzEi1SKT9cHE/wN0zQp9tbSAB38JPe7je8YMnjMundTMFWZYaUZt+oUpioFfRAIF08vRRUYPeCgcOwxfKaqG1pv2Vo2m31aO97m2mEQzYw+ukMkTtBlxihRkIilXQ3ep7gUav5DY7W+zqhazJ/WEc0+lxDQjyZqog1KpGxgfZnRkPVbN22MpNZim2qKRJ//dlBW3lGPvBTRflwQXK1ilU4EFUu+f6YOEHo7alTfU5L7nDEZwWZuyDji+2YNVC2MDrnVl9wl5jC6JN3J8Heg=",
+    "public_key_fingerprint": "d227c7e6dffeb5d428f084cbab2fd8319769475a5b71344daa960bb22c5395c7"
+  }
+}
