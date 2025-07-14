@@ -9,8 +9,7 @@ url = 'http://localhost:5000/'
 resp = requests.get("http://localhost:5000/get_key")
 public_key_path = resp.json()['public_key_path']
 
-#input_file_path = input("Enter file path: ")
-input_file_path = "/home/arjun/Documents/logo.png" 
+input_file_path = input("Enter file path: ")
 output_directory = "output_directory"
 
 metadata = encrypt_file(input_file_path, output_directory, public_key_path) 
@@ -25,6 +24,8 @@ with open(file_path, 'rb') as f:
     files = {'file': (os.path.basename(file_path), f)}
     data = {"filename" : file_name}
     response = requests.post(url, files=files, data = data)
+    os.remove(file_path) # Deleting the created zip file
+    shutil.rmtree(output_directory) # Deleting created output directory
 
 # Printing server response
 print(response.json())

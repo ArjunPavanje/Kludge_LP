@@ -1,27 +1,26 @@
 # 🔐 Secure File Processing System
 
-A comprehensive cryptographic file processing system that implements **hybrid cryptography** for secure file transfer and storage. This system combines **symmetric** and **asymmetric encryption** to provide **confidentiality**, **integrity**, and **secure key management** for files of arbitrary size.
+A comprehensive cryptographic file processing system that implements **hybrid cryptography** for secure file transfer and storage. 
 
 ---
 
 ## 📄 Overview
 
-This implementation fulfills the requirements of a secure file processing system using hybrid cryptography. The system consists of two main components:
+This consists of two main components:
 
 - **Cryptographic Engine**: Handles file encryption/decryption using hybrid cryptography  
 - **File Transfer System**: Manages secure client-server communication for encrypted file transmission
 
 ---
 
-## 🏗️ System Architecture
 
-### Core Components
+### Codes Used 
 
 | File               | Description                                 |
 |--------------------|---------------------------------------------|
-| `encrypt.py`       | Implements the encryption pipeline with chunked file processing |
-| `decrypt.py`       | Handles decryption and file reconstruction  |
-| `key_gen.py`       | Generates ECC key pairs for asymmetric encryption |
+| `encrypt.py`       | Encrypts file to be transferred             |
+| `decrypt.py`       | Decrypts received file                      |
+| `key_gen.py`       | Generates ECC key pair (curve P-384)        |
 | `upload_server.py` | Flask server for receiving and processing encrypted files |
 | `upload_client.py` | Client application for secure file transmission |
 
@@ -38,19 +37,19 @@ This implementation fulfills the requirements of a secure file processing system
 
 2. 🔐 **Key Derivation and Protection**
    - **HKDF**: HMAC-based Key Derivation Function from shared secret
-   - **AES Key Wrapping**: Wraps AES key using derived KEK with AES-GCM
-   - **Secure Metadata**: Stores encrypted AES key and ephemeral public key
+   - **AES Key Wrapping**: Wraps AES key using derived KEK (Key Encryption Key) with AES-GCM
+   - **Storing Metadata**: Stores encrypted AES key and ephemeral public key
 
 3. 🗂️ **File Processing**
-   - **Chunked Encryption**: 1MB per chunk (adjustable)
-   - **AES-256-GCM**: Each chunk encrypted with a unique IV
-   - **SHA-256 Checksums**: For integrity verification of each chunk
+   - **Chunked Encryption**: Splitting file into chunks of size 1MB 
+   - **AES-256-GCM**: Encrypting each chunk using AES-GCM with unique IV's for each chunk
+   - **SHA-256 Checksums**: Calculating checksums (via SHA-256) for integrity verification
 
 4. **Metadata Structure**
 ```json
 {
   "file_info": {
-    "original_name": "filename.ext",
+    "original_name": "example.txt",
     "original_size": 12345678,
     "chunk_size": 1048576,
     "total_chunks": 12,
@@ -67,17 +66,16 @@ This implementation fulfills the requirements of a secure file processing system
 ## 🔓 Decryption Pipeline
 
 1.  🔑 **Key Recovery**
-- **Shared Secret Reconstruction**: Uses recipient's private key + ephemeral public key
-- **KEK Derivation**: Applies HKDF to regenerate the Key Encryption Key
-- **AES Key Decryption**: Unwraps AES key using AES-GCM
+- **Shared Secret Reconstruction**: Reconstructing shared secret using ephemeral public key and static private key
+- **KEK Derivation**: Obtaining KEK (Key encryption Key) using HKDF 
+- **AES Key Decryption**: Unwrapping AES key
 
 2.  📦 **Chunk Decryption**
-- **Sequential Decryption**: Decrypts each chunk one at a time
-- **IV + Checksum Verification**: Ensures correct initialization vectors and SHA-256 hashes
+- **Sequential Decryption**: Decrypting each chunk one at a time
+- **IV + Checksum Verification**: Ensuring data integrity by verifying checksum and tags
 
-2.  🧩 **Reassembly**
+3.  🧩 **Reassembly**
 - **Chunk Assembly**: Combines decrypted chunks into final file
-- **Final Integrity Check**: Confirms correctness of reconstructed file
 
 ---
 
@@ -99,24 +97,11 @@ This implementation fulfills the requirements of a secure file processing system
 
 ## 🛡️ Security Features
 
-- ✅ **File Type Validation**: Restricts upload to safe extensions
-- 🧹 **Temporary Directory Cleanup**: Cleans intermediate files automatically
-- ⚠️ **Error Handling**: Minimal error messages to avoid information leaks
-
----
-
-## 🔐 Security Properties
-
-### 🔒 Cryptographic Strengths
 - **Forward Secrecy**: Unique ephemeral ECC key pair for each session
 - **Authenticated Encryption**: AES-GCM ensures confidentiality and authenticity
-- **Checksum Verification**: SHA-256 ensures tamper resistance
-- **Key Isolation**: AES key never exposed in plaintext
-
-### 🔧 Implementation Security
-- **Memory Efficiency**: 1MB chunk size avoids memory exhaustion
-- **Timing Attack Resistance**: Consistent cryptographic operation times
-- **Minimal Error Leakage**: Generalized error messages for attacker resistance
+- **Checksum Verification**: SHA-256 to ensure data integrity
+- **Unique IV**: Each chunk has a unique initialization vector 
+- **Error Handling**: Errors are appropriately handled
 
 ---
 
@@ -143,17 +128,19 @@ output_directory/
 | Hash Function         | SHA-256                      |
 | Key Derivation        | HKDF with SHA-256            |
 | Chunk Size            | 1MB                          |
-| Max File Size         | 512MB                        |
+---
+## 🚀 Usage
 
+First start the server
+```python
+python3 upload_server.py
+```
+Then run the client 
+```python
+python3 upload_client.py
+```
+(Ensure encrypt, dercypt, key generation scripts are saved in appropriate places)
+
+Pycryptodome library has been used for hybrid cryptography part. File transfer code was modified from the code on this [website](https://medium.com/@mohitdubey_83162/python-building-a-file-upload-and-download-system-with-python-flask-69e19e2c83af) 
 ---
 
-## 📈 Performance Considerations
-
-- 🧠 **Memory Optimization**: Chunked streaming avoids RAM overload  
-- 📦 **Network Optimization**: ZIP compression minimizes upload size 
-- 🧹 **Storage Efficiency**: Temporary files are deleted automatically after processing  
-- 📡 **Scalability**: Stateless Flask server supports concurrent clients efficiently  
-
----
-
-> ✅ These structural and technical details ensure the system is robust, efficient, and production-ready for secure file transfer and processing at scale.

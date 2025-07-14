@@ -1,54 +1,3 @@
-'''
-from flask import Flask, request, jsonify
-from flask import current_app, send_from_directory
-import os
-
-app = Flask(__name__)
-app.config['UPLOAD_FOLDER'] = 'uploads'
-
-def allowed_file(filename):
-    #ALLOWED_EXTENSIONS = set(['ips']) 
-
-    ALLOWED_EXTENSIONS = set(['ips', 'jpeg', 'jpg', 'png', 'pdf', 'zip'])
-    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
-
-@app.route('/', methods=['POST'])
-def upload_file():
-    print("Reached file upload")
-    if request.method == 'POST':
-        # Check if the file part is present
-        if 'file' not in request.files:
-            return jsonify({'error': 'No file part'})
-
-        file = request.files['file']
-
-        # Check if user selected a file
-        if file.filename == '':
-            return jsonify({'error': 'No selected file'})
-
-        if file and allowed_file(file.filename):
-            filename = file.filename  # Secure filename can be implemented here
-            print("File is ", filename)
-
-            # Create upload directory if it doesn't exist
-            if not os.path.exists(app.config['UPLOAD_FOLDER']):
-                os.makedirs(app.config['UPLOAD_FOLDER'])
-
-            file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
-            file.save(file_path)
-
-            # Call your document reading function here (optional)
-            # ReadDocumentsRAG.read_document(file_path)
-
-            return jsonify({'success': 'File Uploaded'})
-        else:
-            return jsonify({'error': 'Invalid file format'})
-
-if __name__ == '__main__':
-    app.run(debug=True, port=5000)
-'''
-
-
 from flask import Flask, request, jsonify
 import os
 import shutil
@@ -66,7 +15,7 @@ private_key_path, public_key_path = key_gen()
 
 # Only known file types are allowed to be uploaded
 def allowed_file(filename):
-    ALLOWED_EXTENSIONS = set(['ips', 'jpeg', 'jpg', 'png', 'pdf', 'zip', 'pem', 'enc'])
+    ALLOWED_EXTENSIONS = set(['zip'])
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 # Allows client to request for static public key
@@ -98,7 +47,7 @@ def upload_file():
         print(f"File saved at: {upload_path}")
 
         # Unzipping contents of zip file onto aa temproary folder
-        if filename.lower().endswith('.zip'):
+        if filename.endswith('.zip'):
             temp_dir = os.path.join(app.config['UPLOAD_FOLDER'], filename + "_temp")
             os.makedirs(temp_dir, exist_ok=True)
 
@@ -119,9 +68,6 @@ def upload_file():
                 return jsonify({'success': 'File decrypted', 'output': decrypted_output})
             else:
                 return jsonify({'error': 'Decryption failed'})
-
-        else:
-            return jsonify({'success': 'File Uploaded'})
 
     return jsonify({'error': 'Invalid file format'})
 
