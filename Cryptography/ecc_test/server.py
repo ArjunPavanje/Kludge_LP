@@ -61,6 +61,7 @@ def upload_file():
             success = decrypt_file(temp_dir, decrypted_output, private_key_path)
 
             # Clean up
+            
             shutil.rmtree(temp_dir)
             print("Temproary directory removed")
 
@@ -70,6 +71,5 @@ def upload_file():
                 return jsonify({'error': 'Decryption failed'})
 
     return jsonify({'error': 'Invalid file format'})
-
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
