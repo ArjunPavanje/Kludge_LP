@@ -2,9 +2,813 @@
     "FILE_SIZE": 17465,
     "ELF_CLASS": "ELFCLASS64",
     "ENDIANNESS": "LITTLE_ ENDIAN",
+    "VERSION": "CURRENT_VERSION",
     "PIE": "PIE_ENABLED",
     "NX": "NX_ENABLED",
     "RELRO": "PARTIAL_RELRO",
+    "SYMBOLS": [
+        {
+            "name": "",
+            "bind": "STB_LOCAL",
+            "type": "STT_NOTYPE",
+            "shndx": "SHN_UNDEF",
+            "value": 0,
+            "size": 0,
+            "section": ".dynsym"
+        },
+        {
+            "name": "getenv",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": "SHN_UNDEF",
+            "value": 0,
+            "size": 0,
+            "section": ".dynsym"
+        },
+        {
+            "name": "__libc_start_main",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": "SHN_UNDEF",
+            "value": 0,
+            "size": 0,
+            "section": ".dynsym"
+        },
+        {
+            "name": "_ITM_deregisterTMCloneTable",
+            "bind": "STB_WEAK",
+            "type": "STT_NOTYPE",
+            "shndx": "SHN_UNDEF",
+            "value": 0,
+            "size": 0,
+            "section": ".dynsym"
+        },
+        {
+            "name": "puts",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": "SHN_UNDEF",
+            "value": 0,
+            "size": 0,
+            "section": ".dynsym"
+        },
+        {
+            "name": "clock",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": "SHN_UNDEF",
+            "value": 0,
+            "size": 0,
+            "section": ".dynsym"
+        },
+        {
+            "name": "printf",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": "SHN_UNDEF",
+            "value": 0,
+            "size": 0,
+            "section": ".dynsym"
+        },
+        {
+            "name": "snprintf",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": "SHN_UNDEF",
+            "value": 0,
+            "size": 0,
+            "section": ".dynsym"
+        },
+        {
+            "name": "memset",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": "SHN_UNDEF",
+            "value": 0,
+            "size": 0,
+            "section": ".dynsym"
+        },
+        {
+            "name": "strcspn",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": "SHN_UNDEF",
+            "value": 0,
+            "size": 0,
+            "section": ".dynsym"
+        },
+        {
+            "name": "fgets",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": "SHN_UNDEF",
+            "value": 0,
+            "size": 0,
+            "section": ".dynsym"
+        },
+        {
+            "name": "__gmon_start__",
+            "bind": "STB_WEAK",
+            "type": "STT_NOTYPE",
+            "shndx": "SHN_UNDEF",
+            "value": 0,
+            "size": 0,
+            "section": ".dynsym"
+        },
+        {
+            "name": "mprotect",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": "SHN_UNDEF",
+            "value": 0,
+            "size": 0,
+            "section": ".dynsym"
+        },
+        {
+            "name": "exit",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": "SHN_UNDEF",
+            "value": 0,
+            "size": 0,
+            "section": ".dynsym"
+        },
+        {
+            "name": "_ITM_registerTMCloneTable",
+            "bind": "STB_WEAK",
+            "type": "STT_NOTYPE",
+            "shndx": "SHN_UNDEF",
+            "value": 0,
+            "size": 0,
+            "section": ".dynsym"
+        },
+        {
+            "name": "strstr",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": "SHN_UNDEF",
+            "value": 0,
+            "size": 0,
+            "section": ".dynsym"
+        },
+        {
+            "name": "__cxa_finalize",
+            "bind": "STB_WEAK",
+            "type": "STT_FUNC",
+            "shndx": "SHN_UNDEF",
+            "value": 0,
+            "size": 0,
+            "section": ".dynsym"
+        },
+        {
+            "name": "stdin",
+            "bind": "STB_GLOBAL",
+            "type": "STT_OBJECT",
+            "shndx": 26,
+            "value": 16608,
+            "size": 8,
+            "section": ".dynsym"
+        },
+        {
+            "name": "",
+            "bind": "STB_LOCAL",
+            "type": "STT_NOTYPE",
+            "shndx": "SHN_UNDEF",
+            "value": 0,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "Scrt1.o",
+            "bind": "STB_LOCAL",
+            "type": "STT_FILE",
+            "shndx": "SHN_ABS",
+            "value": 0,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "__abi_tag",
+            "bind": "STB_LOCAL",
+            "type": "STT_OBJECT",
+            "shndx": 19,
+            "value": 9684,
+            "size": 32,
+            "section": ".symtab"
+        },
+        {
+            "name": "crtstuff.c",
+            "bind": "STB_LOCAL",
+            "type": "STT_FILE",
+            "shndx": "SHN_ABS",
+            "value": 0,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "deregister_tm_clones",
+            "bind": "STB_LOCAL",
+            "type": "STT_FUNC",
+            "shndx": 14,
+            "value": 4384,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "register_tm_clones",
+            "bind": "STB_LOCAL",
+            "type": "STT_FUNC",
+            "shndx": 14,
+            "value": 4432,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "__do_global_dtors_aux",
+            "bind": "STB_LOCAL",
+            "type": "STT_FUNC",
+            "shndx": 14,
+            "value": 4496,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "completed.0",
+            "bind": "STB_LOCAL",
+            "type": "STT_OBJECT",
+            "shndx": 26,
+            "value": 16616,
+            "size": 1,
+            "section": ".symtab"
+        },
+        {
+            "name": "__do_global_dtors_aux_fini_array_entry",
+            "bind": "STB_LOCAL",
+            "type": "STT_OBJECT",
+            "shndx": 21,
+            "value": 15824,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "frame_dummy",
+            "bind": "STB_LOCAL",
+            "type": "STT_FUNC",
+            "shndx": 14,
+            "value": 4560,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "__frame_dummy_init_array_entry",
+            "bind": "STB_LOCAL",
+            "type": "STT_OBJECT",
+            "shndx": 20,
+            "value": 15808,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "chall.c",
+            "bind": "STB_LOCAL",
+            "type": "STT_FILE",
+            "shndx": "SHN_ABS",
+            "value": 0,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "operations",
+            "bind": "STB_LOCAL",
+            "type": "STT_OBJECT",
+            "shndx": 26,
+            "value": 16640,
+            "size": 80,
+            "section": ".symtab"
+        },
+        {
+            "name": "check_stage",
+            "bind": "STB_LOCAL",
+            "type": "STT_OBJECT",
+            "shndx": 26,
+            "value": 16720,
+            "size": 4,
+            "section": ".symtab"
+        },
+        {
+            "name": "user_input",
+            "bind": "STB_LOCAL",
+            "type": "STT_OBJECT",
+            "shndx": 26,
+            "value": 16736,
+            "size": 64,
+            "section": ".symtab"
+        },
+        {
+            "name": "checkpoint",
+            "bind": "STB_LOCAL",
+            "type": "STT_OBJECT",
+            "shndx": 26,
+            "value": 16800,
+            "size": 200,
+            "section": ".symtab"
+        },
+        {
+            "name": "code.0",
+            "bind": "STB_LOCAL",
+            "type": "STT_OBJECT",
+            "shndx": 25,
+            "value": 16584,
+            "size": 8,
+            "section": ".symtab"
+        },
+        {
+            "name": "dummy_func1",
+            "bind": "STB_LOCAL",
+            "type": "STT_FUNC",
+            "shndx": 14,
+            "value": 6351,
+            "size": 22,
+            "section": ".symtab"
+        },
+        {
+            "name": "dummy_func2",
+            "bind": "STB_LOCAL",
+            "type": "STT_FUNC",
+            "shndx": 14,
+            "value": 6373,
+            "size": 22,
+            "section": ".symtab"
+        },
+        {
+            "name": "dummy_func3",
+            "bind": "STB_LOCAL",
+            "type": "STT_FUNC",
+            "shndx": 14,
+            "value": 6395,
+            "size": 22,
+            "section": ".symtab"
+        },
+        {
+            "name": "crtstuff.c",
+            "bind": "STB_LOCAL",
+            "type": "STT_FILE",
+            "shndx": "SHN_ABS",
+            "value": 0,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "__FRAME_END__",
+            "bind": "STB_LOCAL",
+            "type": "STT_OBJECT",
+            "shndx": 18,
+            "value": 9680,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "",
+            "bind": "STB_LOCAL",
+            "type": "STT_FILE",
+            "shndx": "SHN_ABS",
+            "value": 0,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "_DYNAMIC",
+            "bind": "STB_LOCAL",
+            "type": "STT_OBJECT",
+            "shndx": 22,
+            "value": 15840,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "__GNU_EH_FRAME_HDR",
+            "bind": "STB_LOCAL",
+            "type": "STT_NOTYPE",
+            "shndx": 17,
+            "value": 8784,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "_GLOBAL_OFFSET_TABLE_",
+            "bind": "STB_LOCAL",
+            "type": "STT_OBJECT",
+            "shndx": 24,
+            "value": 16360,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "getenv@GLIBC_2.2.5",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": "SHN_UNDEF",
+            "value": 0,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "__libc_start_main@GLIBC_2.34",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": "SHN_UNDEF",
+            "value": 0,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "_ITM_deregisterTMCloneTable",
+            "bind": "STB_WEAK",
+            "type": "STT_NOTYPE",
+            "shndx": "SHN_UNDEF",
+            "value": 0,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "data_start",
+            "bind": "STB_WEAK",
+            "type": "STT_NOTYPE",
+            "shndx": 25,
+            "value": 16480,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "puts@GLIBC_2.2.5",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": "SHN_UNDEF",
+            "value": 0,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "stdin@GLIBC_2.2.5",
+            "bind": "STB_GLOBAL",
+            "type": "STT_OBJECT",
+            "shndx": 26,
+            "value": 16608,
+            "size": 8,
+            "section": ".symtab"
+        },
+        {
+            "name": "obfuscated_flag",
+            "bind": "STB_GLOBAL",
+            "type": "STT_OBJECT",
+            "shndx": 25,
+            "value": 16544,
+            "size": 38,
+            "section": ".symtab"
+        },
+        {
+            "name": "_edata",
+            "bind": "STB_GLOBAL",
+            "type": "STT_NOTYPE",
+            "shndx": 25,
+            "value": 16592,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "verify_password",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": 14,
+            "value": 5774,
+            "size": 206,
+            "section": ".symtab"
+        },
+        {
+            "name": "clock@GLIBC_2.2.5",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": "SHN_UNDEF",
+            "value": 0,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "_fini",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": 15,
+            "value": 6468,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "printf@GLIBC_2.2.5",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": "SHN_UNDEF",
+            "value": 0,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "snprintf@GLIBC_2.2.5",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": "SHN_UNDEF",
+            "value": 0,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "memset@GLIBC_2.2.5",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": "SHN_UNDEF",
+            "value": 0,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "strcspn@GLIBC_2.2.5",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": "SHN_UNDEF",
+            "value": 0,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "signal_handler",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": 14,
+            "value": 5397,
+            "size": 45,
+            "section": ".symtab"
+        },
+        {
+            "name": "fgets@GLIBC_2.2.5",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": "SHN_UNDEF",
+            "value": 0,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "self_modify_check",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": 14,
+            "value": 4769,
+            "size": 84,
+            "section": ".symtab"
+        },
+        {
+            "name": "__data_start",
+            "bind": "STB_GLOBAL",
+            "type": "STT_NOTYPE",
+            "shndx": 25,
+            "value": 16480,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "obfuscated_key",
+            "bind": "STB_GLOBAL",
+            "type": "STT_OBJECT",
+            "shndx": 25,
+            "value": 16512,
+            "size": 10,
+            "section": ".symtab"
+        },
+        {
+            "name": "format_check",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": 14,
+            "value": 5209,
+            "size": 86,
+            "section": ".symtab"
+        },
+        {
+            "name": "__gmon_start__",
+            "bind": "STB_WEAK",
+            "type": "STT_NOTYPE",
+            "shndx": "SHN_UNDEF",
+            "value": 0,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "__dso_handle",
+            "bind": "STB_GLOBAL",
+            "type": "STT_OBJECT",
+            "shndx": 25,
+            "value": 16488,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "_IO_stdin_used",
+            "bind": "STB_GLOBAL",
+            "type": "STT_OBJECT",
+            "shndx": 16,
+            "value": 8192,
+            "size": 4,
+            "section": ".symtab"
+        },
+        {
+            "name": "init_protection",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": 14,
+            "value": 6417,
+            "size": 17,
+            "section": ".symtab"
+        },
+        {
+            "name": "stack_check",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": 14,
+            "value": 4663,
+            "size": 106,
+            "section": ".symtab"
+        },
+        {
+            "name": "timing_check",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": 14,
+            "value": 5092,
+            "size": 117,
+            "section": ".symtab"
+        },
+        {
+            "name": "_end",
+            "bind": "STB_GLOBAL",
+            "type": "STT_NOTYPE",
+            "shndx": 26,
+            "value": 17000,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "_start",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": 14,
+            "value": 4336,
+            "size": 34,
+            "section": ".symtab"
+        },
+        {
+            "name": "reveal_flag",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": 14,
+            "value": 5980,
+            "size": 85,
+            "section": ".symtab"
+        },
+        {
+            "name": "__bss_start",
+            "bind": "STB_GLOBAL",
+            "type": "STT_NOTYPE",
+            "shndx": 26,
+            "value": 16608,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "main",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": 14,
+            "value": 6065,
+            "size": 286,
+            "section": ".symtab"
+        },
+        {
+            "name": "cleanup",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": 14,
+            "value": 6434,
+            "size": 32,
+            "section": ".symtab"
+        },
+        {
+            "name": "mprotect@GLIBC_2.2.5",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": "SHN_UNDEF",
+            "value": 0,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "control_flow_check",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": 14,
+            "value": 5295,
+            "size": 102,
+            "section": ".symtab"
+        },
+        {
+            "name": "exit@GLIBC_2.2.5",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": "SHN_UNDEF",
+            "value": 0,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "compare",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": 14,
+            "value": 4853,
+            "size": 239,
+            "section": ".symtab"
+        },
+        {
+            "name": "__TMC_END__",
+            "bind": "STB_GLOBAL",
+            "type": "STT_OBJECT",
+            "shndx": 25,
+            "value": 16592,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "_ITM_registerTMCloneTable",
+            "bind": "STB_WEAK",
+            "type": "STT_NOTYPE",
+            "shndx": "SHN_UNDEF",
+            "value": 0,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "init_operations",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": 14,
+            "value": 5627,
+            "size": 147,
+            "section": ".symtab"
+        },
+        {
+            "name": "env_check",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": 14,
+            "value": 5442,
+            "size": 185,
+            "section": ".symtab"
+        },
+        {
+            "name": "__cxa_finalize@GLIBC_2.2.5",
+            "bind": "STB_WEAK",
+            "type": "STT_FUNC",
+            "shndx": "SHN_UNDEF",
+            "value": 0,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "_init",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": 11,
+            "value": 4096,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "strstr@GLIBC_2.2.5",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": "SHN_UNDEF",
+            "value": 0,
+            "size": 0,
+            "section": ".symtab"
+        },
+        {
+            "name": "decode_string",
+            "bind": "STB_GLOBAL",
+            "type": "STT_FUNC",
+            "shndx": 14,
+            "value": 4569,
+            "size": 94,
+            "section": ".symtab"
+        }
+    ],
     "SECTION_HEADERS": {
         "<unnamed_0>": {
             "sh_name": 0,

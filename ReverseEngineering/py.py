@@ -1,5 +1,5 @@
 from elftools.elf.elffile import ELFFile 
-from elftools.elf.sections import Section
+from elftools.elf.sections import SymbolTableSection
 import json
 import os
 import sys
@@ -19,15 +19,29 @@ def fetch_file_info(file_path='chall'):
             file_info['ENDIANNESS'] = 'BIG_ ENDIAN'
         else:
             sys.exit('Endiannes unknown')
+        file_info["VERSION"] = 'CURRENT_VERSION' if head['e_version'] == 'EV_CURRENT' else 'INVALID_VERSION'
         print('Section shit:')
         #for section in elf.iter_sections():
             #print(section.name)
         section_headers = {}
-
+        symbol_list = []
         for section in elf.iter_sections():
             name = section.name or f"<unnamed_{section.header['sh_name']}>"
             section_headers[name] = dict(section.header)
-        
+
+            if isinstance(section, SymbolTableSection):
+                for symbol in section.iter_symbols():
+                    sym_info = {
+                        'name': symbol.name,
+                        'bind': symbol['st_info']['bind'],
+                        'type': symbol['st_info']['type'],
+                        'shndx': symbol['st_shndx'],
+                        'value': symbol['st_value'],
+                        'size': symbol['st_size'],
+                        'section': section.name
+                    }
+                    symbol_list.append(sym_info) 
+
         # Check PIE
         e_type = head['e_type']
         pie = (e_type == 'ET_DYN')
@@ -72,7 +86,7 @@ def fetch_file_info(file_path='chall'):
         print(f"NX: {'Enabled' if nx_enabled else 'Disabled'}")
         print(f"RELRO: {relro}")
 
-
+        file_info["SYMBOLS"] = symbol_list
         file_info['SECTION_HEADERS'] = section_headers
     print('header: \n', head)
 
